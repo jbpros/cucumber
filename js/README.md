@@ -22,28 +22,22 @@ And probably lots of other browsers.
 
 ## Play with it!
 
-    $ open <cuke_root>/js/example/index.html
+    $ open js/example/index.html
 
 ## Setup for using in Node.js and running tests
 
 The only dependency of cucumber.js is Gherkin:
 
-    $ cd <cuke_root>
-    $ npm install gherkin
-    
-If you want to run the specs:
-
-    $ cd <cuke_root> 
-    $ npm install -g jasmine-node # a command-line tool needs the "global" flag
+    $ npm link
     
 ## Run tests
 
 Specs:
 
-    $ cd <cuke_root>/js/spec
-    $ jasmine-node .
+    $ cd js/spec
+    $ ../../node_modules/.bin/jasmine-node .
     
 Features (yes, cucumber.js is eating itself):
 
-    $ cd <cuke_root>/js
+    $ cd js
     $ node cucumber.js features/basic.feature
