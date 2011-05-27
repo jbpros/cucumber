@@ -23,3 +23,4 @@ rerun.txt
 ._*
 .rvmrc
 .sass-cache
+node_modules
